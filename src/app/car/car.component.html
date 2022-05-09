@@ -1,0 +1,10 @@
+<h1>{{ title }}</h1>
+
+<div>
+  <span *ngIf="isCarVisible">Car is visible</span>
+  <span *ngIf="!isCarVisible">Nothing to show</span>
+</div>
+
+<p>{{ carName }}</p>
+
+<button (click)="isCarVisible = !isCarVisible">Togler</button>
